@@ -7,6 +7,17 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <PackageId>TmaAuthentication</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>cloud-yyy</Authors>
+    <Description>Telegram Mini App Authentication Library</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/cloud-yyy/tma-authentication</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/cloud-yyy/tma-authentication</RepositoryUrl>
+    <PackageTags>validation;library</PackageTags>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Include="../../README.md" Pack="true" PackagePath="/" />
   </ItemGroup>
