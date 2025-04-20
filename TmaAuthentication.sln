@@ -2,9 +2,9 @@
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TmaAuth", "src\TmaAuth\TmaAuth.csproj", "{0CEF2182-6ABC-471A-A4E9-83A40D207915}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TmaAuthentication", "src\TmaAuthentication\TmaAuthentication.csproj", "{0CEF2182-6ABC-471A-A4E9-83A40D207915}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TmaAuth.Tests", "tests\TmaAuth.Tests\TmaAuth.Tests.csproj", "{D7E68D2E-2010-496D-BCF3-AF5A216D93B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TmaAuthentication.Tests", "tests\TmaAuthentication.Tests\TmaAuthentication.Tests.csproj", "{D7E68D2E-2010-496D-BCF3-AF5A216D93B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
