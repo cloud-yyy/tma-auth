@@ -1,10 +1,12 @@
-# TmaAuth
+# TmaAuthentication
+
+[![NuGet](https://img.shields.io/nuget/v/TmaAuthentication.svg)](https://www.nuget.org/packages/TmaAuthentication/)
 
 A C# library for validating Telegram Mini App initialization data.
 
 ## Overview
 
-TmaAuth is a C# library for working with Telegram Mini App initialization data. It provides functionality to:
+TmaAuthentication is a C# library for working with Telegram Mini App initialization data. It provides functionality to:
 
 - Parse initialization data from a query string format
 - Validate the initialization data using the bot token
@@ -15,7 +17,7 @@ TmaAuth is a C# library for working with Telegram Mini App initialization data. 
 Add the NuGet package to your project:
 
 ```bash
-dotnet add package TmaAuth
+dotnet add package TmaAuthentication
 ```
 
 ## Usage
@@ -29,8 +31,8 @@ The validator helps you verify if the initialization data received from Telegram
 var validator = new TmaInitDataValidator();
 
 // Validate initialization data with 24-hour expiration
-string initData = "query_id=AAHdF6IQAAAAAN0XohDhrOrc&user=%7B%22id%22%3A279058397%2C%22first_name%22%3A%22John%22%2C%22last_name%22%3A%22Doe%22%7D&auth_date=1713542400&hash=abc123...";
-bool isValid = validator.Validate(initData, "YOUR_BOT_TOKEN", TimeSpan.FromHours(24));
+var initData = "query_id=AAHdF6IQAAAAAN0XohDhrOrc&user=%7B%22id%22%3A279058397%2C%22first_name%22%3A%22John%22%2C%22last_name%22%3A%22Doe%22%7D&auth_date=1713542400&hash=abc123...";
+var isValid = validator.Validate(initData, "YOUR_BOT_TOKEN", TimeSpan.FromHours(24));
 
 if (isValid)
 {
@@ -57,7 +59,7 @@ var parameters = new Dictionary<string, string>
     { "query_id", "AAHdF6IQAAAAAN0XohDhrOrc" },
     { "auth_date", DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString() }
 };
-string hash = signer.Sign(parameters, "YOUR_BOT_TOKEN");
+var hash = signer.Sign(parameters, "YOUR_BOT_TOKEN");
 ```
 
 ## License
