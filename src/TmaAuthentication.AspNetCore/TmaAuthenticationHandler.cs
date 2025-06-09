@@ -6,6 +6,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.Net.Http.Headers;
 using TmaAuth;
 using TmaAuth.Abstractions;
+using TmaAuthentication.AspNetCore.Options;
 
 namespace TmaAuthentication.AspNetCore;
 

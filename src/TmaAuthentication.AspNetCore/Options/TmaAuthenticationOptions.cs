@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Authentication;
 
-namespace TmaAuthentication.AspNetCore;
+namespace TmaAuthentication.AspNetCore.Options;
 
 public class TmaAuthenticationOptions : AuthenticationSchemeOptions
 {

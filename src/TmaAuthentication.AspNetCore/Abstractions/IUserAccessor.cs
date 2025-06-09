@@ -1,6 +1,6 @@
 using TmaAuth.Models;
 
-namespace TmaAuthentication.AspNetCore;
+namespace TmaAuthentication.AspNetCore.Abstractions;
 
 public interface IUserAccessor
 {

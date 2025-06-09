@@ -2,6 +2,8 @@ using Microsoft.Extensions.DependencyInjection;
 using TmaAuthentication.AspNetCore;
 using TmaAuthentication.AspNetCore.IntegrationTests.Infrastructure;
 using TmaAuth.Abstractions;
+using TmaAuthentication.AspNetCore.Extensions;
+using TmaAuthentication.AspNetCore.Abstractions;
 
 namespace TmaAuthentication.AspNetCore.IntegrationTests;
 

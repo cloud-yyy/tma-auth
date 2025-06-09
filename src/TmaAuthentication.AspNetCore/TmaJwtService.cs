@@ -6,6 +6,8 @@ using Microsoft.IdentityModel.Tokens;
 using TmaAuth;
 using TmaAuth.Abstractions;
 using TmaAuth.Models;
+using TmaAuthentication.AspNetCore.Abstractions;
+using TmaAuthentication.AspNetCore.Options;
 
 namespace TmaAuthentication.AspNetCore;
 

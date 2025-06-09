@@ -1,6 +1,7 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Http;
 using TmaAuth.Models;
+using TmaAuthentication.AspNetCore.Abstractions;
 
 namespace TmaAuthentication.AspNetCore;
 

@@ -3,6 +3,8 @@ using TmaAuthentication.AspNetCore;
 using TmaAuthentication.AspNetCore.IntegrationTests.Infrastructure;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using TmaAuthentication.AspNetCore.Abstractions;
+using TmaAuthentication.AspNetCore.Extensions;
 
 namespace TmaAuthentication.AspNetCore.IntegrationTests;
 

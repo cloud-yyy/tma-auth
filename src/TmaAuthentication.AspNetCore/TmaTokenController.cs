@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using TmaAuthentication.AspNetCore.Abstractions;
+using TmaAuthentication.AspNetCore.Options;
 
 namespace TmaAuthentication.AspNetCore;
 

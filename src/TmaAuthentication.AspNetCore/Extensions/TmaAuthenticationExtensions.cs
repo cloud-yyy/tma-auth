@@ -4,8 +4,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using TmaAuth;
 using TmaAuth.Abstractions;
+using TmaAuthentication.AspNetCore.Abstractions;
+using TmaAuthentication.AspNetCore.Defaults;
+using TmaAuthentication.AspNetCore.Options;
 
-namespace TmaAuthentication.AspNetCore;
+namespace TmaAuthentication.AspNetCore.Extensions;
 
 public static class TmaAuthenticationExtensions
 {

@@ -1,4 +1,6 @@
 using TmaAuthentication.AspNetCore;
+using TmaAuthentication.AspNetCore.Abstractions;
+using TmaAuthentication.AspNetCore.Extensions;
 using TmaAuthentication.AspNetCore.IntegrationTests.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);

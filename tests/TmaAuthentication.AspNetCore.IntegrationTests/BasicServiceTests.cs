@@ -3,6 +3,10 @@ using Microsoft.Extensions.Options;
 using TmaAuthentication.AspNetCore;
 using TmaAuthentication.AspNetCore.IntegrationTests.Infrastructure;
 using TmaAuth.Abstractions;
+using TmaAuthentication.AspNetCore.Defaults;
+using TmaAuthentication.AspNetCore.Extensions;
+using TmaAuthentication.AspNetCore.Options;
+using TmaAuthentication.AspNetCore.Abstractions;
 
 namespace TmaAuthentication.AspNetCore.IntegrationTests;
 

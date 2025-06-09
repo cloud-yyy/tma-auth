@@ -1,4 +1,4 @@
-namespace TmaAuthentication.AspNetCore;
+namespace TmaAuthentication.AspNetCore.Defaults;
 
 public static class TmaAuthenticationDefaults
 {

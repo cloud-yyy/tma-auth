@@ -2,6 +2,7 @@ using System.Net;
 using System.Net.Http.Json;
 using TmaAuthentication.AspNetCore.IntegrationTests.Infrastructure;
 using TmaAuth.Models;
+using TmaAuthentication.AspNetCore.Defaults;
 
 namespace TmaAuthentication.AspNetCore.IntegrationTests;
 

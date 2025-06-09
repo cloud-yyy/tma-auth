@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using TmaAuthentication.AspNetCore;
+using TmaAuthentication.AspNetCore.Abstractions;
+using TmaAuthentication.AspNetCore.Defaults;
 
 namespace TmaAuthentication.AspNetCore.IntegrationTests.Controllers;
 
