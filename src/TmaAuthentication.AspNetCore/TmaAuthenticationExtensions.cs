@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using TmaAuth;
@@ -31,6 +32,8 @@ public static class TmaAuthenticationExtensions
         services.TryAddSingleton<ITmaInitDataValidator, TmaInitDataValidator>();
         services.TryAddSingleton<ITmaInitDataParser, TmaInitDataParser>();
         services.TryAddSingleton<ITmaInitDataSigner, TmaInitDataSigner>();
+        services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+        services.TryAddScoped<IUserAccessor, UserAccessor>();
 
         return services.AddAuthentication()
             .AddScheme<TmaAuthenticationOptions, TmaAuthenticationHandler>(authenticationScheme, displayName, configureOptions);
@@ -56,6 +59,8 @@ public static class TmaAuthenticationExtensions
         services.TryAddSingleton<ITmaInitDataValidator, TmaInitDataValidator>();
         services.TryAddSingleton<ITmaInitDataParser, TmaInitDataParser>();
         services.TryAddSingleton<ITmaInitDataSigner, TmaInitDataSigner>();
+        services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+        services.TryAddScoped<IUserAccessor, UserAccessor>();
         services.TryAddScoped<ITmaJwtService, TmaJwtService>();
 
         var authBuilder = services.AddAuthentication()
@@ -95,6 +100,8 @@ public static class TmaAuthenticationExtensions
         builder.Services.TryAddSingleton<ITmaInitDataValidator, TmaInitDataValidator>();
         builder.Services.TryAddSingleton<ITmaInitDataParser, TmaInitDataParser>();
         builder.Services.TryAddSingleton<ITmaInitDataSigner, TmaInitDataSigner>();
+        builder.Services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+        builder.Services.TryAddScoped<IUserAccessor, UserAccessor>();
         builder.Services.TryAddScoped<ITmaJwtService, TmaJwtService>();
 
         builder.Services.Configure<TmaJwtOptions>(authenticationScheme, options =>
