@@ -20,7 +20,7 @@ public class TmaJwtService : ITmaJwtService
         ITmaInitDataValidator validator,
         ITmaInitDataParser parser)
     {
-        _options = options.CurrentValue;
+        _options = options.Get(TmaJwtDefaults.AuthenticationScheme);
         _validator = validator;
         _parser = parser;
     }
