@@ -1,6 +1,7 @@
 # TmaAuthentication
 
 [![NuGet](https://img.shields.io/nuget/v/TmaAuthentication.svg)](https://www.nuget.org/packages/TmaAuthentication/)
+[![GitHub](https://img.shields.io/github/license/cloud-yyy/tma-authentication)](https://github.com/cloud-yyy/tma-authentication)
 
 A C# library for validating Telegram Mini App initialization data.
 
