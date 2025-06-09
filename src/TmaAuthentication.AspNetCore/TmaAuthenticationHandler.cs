@@ -17,9 +17,8 @@ public class TmaAuthenticationHandler : AuthenticationHandler<TmaAuthenticationO
         IOptionsMonitor<TmaAuthenticationOptions> options,
         ILoggerFactory logger,
         UrlEncoder encoder,
-        ISystemClock clock,
         ITmaInitDataValidator validator)
-        : base(options, logger, encoder, clock)
+        : base(options, logger, encoder)
     {
         _validator = validator;
     }
